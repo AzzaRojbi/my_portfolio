@@ -186,7 +186,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -196,7 +196,7 @@
             </div>
             <div class="row form-padding">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" method="post" action="contact.php" role="form">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -221,9 +221,11 @@
                         <br>
                         <div class="contact-btn text-center btn-style">
                             <div class="btn-styleLine double-line page-scroll">
-                                <a href="#portfolio" class="btn btn-lg btn-outline">
+                                <!-- <a href="#portfolio" class="btn btn-lg btn-outline">
                                     <i class="fa fa-fw fa-paper-plane"></i>Send
-                                </a>
+                                </a> -->
+                          <!--        <input type="submit" class="btn btn-lg btn-outline" value="Send message" id="sendMessageButton"> -->
+                           <button id="sendMessageButton" class="btn btn-lg btn-outline" type="submit">Send Message</button>
                             </div>
                         </div>    
                     </form>
